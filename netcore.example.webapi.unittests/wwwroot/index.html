@@ -1,0 +1,28 @@
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Lista de Nomes</title>
+</head>
+<body ng-controller="controller">
+    <h1>{{titulo}}</h1>
+    <input ng-model='nome'>
+    <button ng-click="buscarNome()">Buscar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat='pessoa in pessoas'>
+                <td>{{pessoa.nome}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script> 
+    <script type="text/javascript" src="controle.js"></script>
+</body>
+</html>
+

@@ -46,6 +46,8 @@ namespace netcore.example.webapi.unittests
             {
                 endpoints.MapControllers();
             });
+
+            app.UseStaticFiles();
         }
     }
 }
